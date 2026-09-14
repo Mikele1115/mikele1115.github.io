@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michele Bavestrello</title>
+  <meta name="description" content="Michele Bavestrello — aprendiendo Ruby on Rails, construyendo con Claude. Proyectos y contacto.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>">
+</head>
+<body>
+
+  <header class="portada">
+    <h1>Michele Bavestrello</h1>
+    <p class="lema">Aprendiendo Ruby on Rails, construyendo con Claude.</p>
+
+    <nav class="enlaces" aria-label="Contacto">
+      <a href="https://github.com/Mikele1115">GitHub</a>
+      <a href="https://www.linkedin.com/in/TU-USUARIO-LINKEDIN">LinkedIn</a>
+      <a href="mailto:michele.bavestrello@gmail.com">michele.bavestrello@gmail.com</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Estoy aprendiendo a programar en Ruby on Rails construyendo cosas que
+        resuelven problemas reales, con Claude como par de programación:
+        yo decido qué hacer y por qué, y verifico cada paso; la herramienta
+        acelera el cómo. Me importa entender lo que escribo — por eso cada
+        proyecto de esta página tiene tests, un README que explica las
+        decisiones, y está desplegado para que se pueda usar, no solo leer.
+      </p>
+    </section>
+
+    <section class="proyectos">
+      <h2>Proyectos</h2>
+
+      <article class="proyecto">
+        <a class="captura" href="https://costos.enmipccorre.dev">
+          <img src="img/control-costos.png"
+               alt="Panel de Control de Costos: la carta agrupada por sección, con el food cost de cada plato y dos platos marcados como fuera de rango"
+               loading="lazy" width="1192" height="865">
+        </a>
+
+        <div class="detalle">
+          <h3>Control de Costos La Splendida</h3>
+          <p class="resumen">
+            Cuánto cuesta realmente cada plato de la carta de un restaurante,
+            y qué pasa con ese número cuando sube el precio de un insumo.
+          </p>
+          <ul class="puntos">
+            <li>Costeo recursivo: una salsa es una receta que se usa como ingrediente de otra.</li>
+            <li>Historial de precios con fecha de vigencia; cualquier costo se consulta a cualquier fecha.</li>
+            <li>Aviso por correo cuando un plato empeora su food cost.</li>
+            <li>Tres roles, 340 tests, prueba de mutación, CI.</li>
+          </ul>
+          <p class="stack">
+            <span>Rails 8</span><span>PostgreSQL</span><span>Hotwire</span>
+            <span>Tailwind</span><span>Kamal</span><span>AWS Lightsail</span>
+          </p>
+          <p class="acciones">
+            <a class="boton" href="https://costos.enmipccorre.dev">Ver en vivo</a>
+            <a class="boton secundario" href="https://github.com/Mikele1115/control_costos">Código y README</a>
+          </p>
+          <p class="nota">
+            Demo pública de solo lectura: <code>demo@lasplendida.cl</code> / <code>demo1234</code>
+          </p>
+        </div>
+      </article>
+
+      <!--
+        Para agregar un proyecto: copia el <article class="proyecto"> de
+        arriba, cambia el texto, y pon la captura en img/. Nada más.
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Hecho a mano en HTML y CSS, sin frameworks.
+      <a href="https://github.com/Mikele1115/mikele1115.github.io">Ver el código de esta página</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
