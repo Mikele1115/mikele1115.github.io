@@ -82,6 +82,39 @@
           </p>
         </div>
       </article>
+      <article class="proyecto">
+        <a class="captura" href="https://github.com/Mikele1115/fudo-dashboard">
+          <img src="img/dashboard-ventas.png"
+               alt="Dashboard de ventas de un restaurante: venta bruta y neta, tickets, ticket por persona, y comparación con el mismo día del año anterior (captura con datos ficticios)"
+               width="1240" height="900" loading="lazy">
+        </a>
+        <div class="detalle">
+          <h3>Dashboard de ventas Ciudad de Pie</h3>
+          <p>
+            Cómo le fue ayer a una pizzería comparado con el mismo día del año
+            pasado, con sus promedios y con los siete años anteriores. Cada
+            mañana el dueño recibe el informe por correo sin abrir nada.
+          </p>
+          <ul class="puntos">
+            <li>Integración con la API del punto de venta (Fudo): token, paginación, reintentos y zonas horarias.</li>
+            <li>Venta bruta y neta, ticket por persona, comparativa 2019→hoy y mismo período de cada año.</li>
+            <li>Informe diario a las 00:00 con Solid Queue, corriendo dentro del mismo contenedor.</li>
+            <li>Login propio (Rails 8 authentication), SQLite en volumen persistente, tests del cálculo.</li>
+          </ul>
+          <div class="stack">
+            <span>Rails 8</span><span>SQLite</span><span>Hotwire</span>
+            <span>Chart.js</span><span>Kamal</span><span>AWS Lightsail</span>
+          </div>
+          <div class="acciones">
+            <a class="btn" href="https://github.com/Mikele1115/fudo-dashboard">Código y README</a>
+          </div>
+          <p class="nota">
+            Acceso privado: muestra las ventas reales de un restaurante en
+            operación. La captura usa datos ficticios generados por la propia app.
+          </p>
+        </div>
+      </article>
+
 
       <!--
         Para agregar un proyecto: copia el <article class="proyecto"> de
